@@ -7,6 +7,7 @@ html,
 body,
 #root {
   height: 100%;
+  background-image: url(./assets/images/bg.jpg);
 }
 
 .app {
@@ -14,12 +15,191 @@ body,
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 
 .container {
-  width: 90%;
+  // width: 90%;
   height: 90vh;
   background-color: white;
   border-radius: 20px;
-  margin-top: 40px;
+  margin: 0px 5% 0px 5%;
+  border-top:40px
+}
+
+.input {
+  height: 60px;
+  color: #4e4e4e !important;
+  border :3px solid lightgray;
+  border-radius: 10px;
+  font-size :34px;
+  margin: auto;
+  display: flex;
+  text-align: center;
+  outline: none;
+  position: relative;
+  animation: move-in-steps2 1.5s;
+}
+
+.button{
+  color: #ffffff ;
+  background-image:radial-gradient(ellipse farthest-corner at top left, #c41417 0%, #b31315 100%);
+  display: inherit;
+  align-items: center;
+  margin: 5% auto auto auto;
+  justify-content: center;
+  border-radius: 5px;
+  height: 8%;
+  width: 12%;
+  font-size: 150%;
+  outline: none;
+  border-style: none;
+  position: relative;
+  animation: move-in-steps2 2s;
+}
+
+.button:active{
+  border-style: none;
+}
+.button:hover{
+  transition: transform 0.5s;
+  transform: scale(1.1);
+  box-shadow: 0px 6px 15px -5px grey;
+}
+
+.input:-internal-autofill-selected{
+  background-color: white !important;
+}
+
+.text-button{
+  color:#6f6f6f;
+  align-items: center;
+  margin: 3% auto;
+  justify-content: center;
+  display: inherit;
+  height: 8%;
+  width: 12%;
+  border: none;
+  background: white;
+  font-size: 150%;
+  outline: none;
+  position: relative;
+  animation: move-in-steps2 2s;
+}
+
+.text-button-fix{
+  margin: 3% 4% auto 37% !important;
+}
+
+.text-button:hover{
+  color: #c41417;
+  transition: transform 0.5s;
+  transform: scale(1.1);
+}
+
+.text {
+  text-align: center;
+  padding: 5% 5% 3% 5%;
+  font-size: 40px;
+  position: relative;
+  animation: move-in-steps2 1s;
+}
+
+.fade-in {
+  animation: fadeIn 2s;
+  transition: opacity 2s;
+  opacity: 1;
+  }
+  @keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+
+.head-chatRoom{
+  font-size: 230%;
+  position: relative;
+  left: 2%;
+  top: 1%;
+}
+
+.container-chatroom{
+  background-color: #9c9c9c26;
+  height: 95%;
+  border-radius: 10px;
+  margin: 0.5% 2% auto 2%;
+  display: grid;
+  align-content: space-between;
+  animation: move-in-steps 1s;
+  position: relative;
+}
+
+.slide-bottom{
+  animation: slidebottom 1s;
+  position: relative;
+
+  @keyframes slidebottom {
+    0% {
+    bottom: -100px;
+    opacity: 0;
+    }
+    
+    100% {
+      bottom: 0px;
+      opacity: 1;
+    }
+  }
+}
+
+.text-chat{
+  left: 1.5%;
+  position: relative;
+  font-weight: normal !important;
+}
+
+.text-chat-box{
+  background-color: #9c9c9c26;
+  width: fit-content;
+  padding: 0.8% 1.5%;
+  border-radius: 10px;
+  font-size: 18px;
+  left: 1.5%;
+  position: relative;
+  font-weight: bold;
+  animation: move-in-steps2 3s;
+}
+
+@keyframes move-in-steps {
+  0% {
+    left:5%;
+    opacity: 0;
+  }
+
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes move-in-steps2 {
+  0% {
+    bottom: -5%;
+    opacity: 0;
+  }
+
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+.hello5{
+  animation: move-in-steps2 1s;
+  position: relative;
+}
+
+::placeholder{
+  text-align: end;
+  font-size: 40%;
+  position: relative;
+  bottom: -20%;
 }
