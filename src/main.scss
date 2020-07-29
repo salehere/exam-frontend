@@ -1,12 +1,10 @@
-body {
-  margin: 0;
-  font-family: "Prompt", sans-serif;
-}
+body,
 
 html,
 body,
 #root {
   height: 100%;
+  background-color: rgb(43, 40, 40);
 }
 
 .app {
@@ -14,12 +12,324 @@ body,
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .container {
-  width: 90%;
   height: 90vh;
   background-color: white;
   border-radius: 20px;
+  margin-top: 20px;
+  position: absolute;
+  top:40px; 
+  z-index: 1;
+  vertical-align: middle;
+  text-align: center;
+  max-height: 90vh;
+  min-width: 90vh;
+  }
+
+.container2 {
+  width: 98.5%;
+  height: 78vh;
+  background-color: #f0efef;
+  margin-bottom: 0px;
+  position: absolute; 
+  max-width: 100%;
+  z-index: 2;
+  vertical-align: middle;
+  text-align: center;
+  margin-left: 10px;
+  border-radius: 20px;
+}
+
+.container3 {
+  background-color: #e7dede;
+  margin-bottom: 0px;
+  position: absolute; 
+  max-width: 100%;
+  z-index: 2;
+  vertical-align: middle;
+  text-align: center;
+  margin-left: 40px;
+  margin-top: 35px;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+
+.imgback {
+  position: absolute;
+  width: 170vh;
+  height: 110vh;
+  z-index: 1;
+  max-height: 100vh;
+}
+
+.logo {
+  position: absolute;
+  top:10px ;
+  height: 40px;
+  width: auto;
+  max-width: 80%;
+  max-height:auto;
+  align-items: center;
+  z-index: 2;
+}
+
+.input1 {
+  color :#4e4e4e;
+  border :3px solid lightgray;
+  height: 60px;
+  border-radius : 10px ;
+  width: 700px;
+  font-size: 34px;
+  outline:none;
+  font-family: "Prompt", sans-serif;  
+  text-align: center;
+}
+
+
+.input2 {
+  color :#4e4e4e;
+  border :3px solid lightgray;
+  height: 60px;
+  border-radius : 10px ;
+  width: 500px;
+  font-size: 34px;
+  outline:none;
+  font-family: "Prompt", sans-serif;  
+  text-align: center;
+  
+}
+
+.input2:focus::placeholder {
+  color:transparent
+}
+
+.divchat {
+  position: relative;
+}
+
+.chatbox {
+  color :#4e4e4e;
+  border :3px solid lightgray;
+  height: 60px;
+  border-radius : 10px ;
+  width: 1100px;
+  font-size: 34px;
+  outline:none;
+  font-family: "Prompt", sans-serif;  
+  text-align: center;
+  margin-top: 530px;
+  z-index: 2;
+}
+
+.chatbox::placeholder {
+  font-size: 15px;
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.enterchat {
+  margin-top: 600px;
+  z-index: 2;
+  position: absolute;
+}
+
+
+
+//buttons
+
+.button1 {
+	border-radius:10px;
+	border:0px ;
+	display:inline-block;
+  cursor:pointer;
+  background-image: radial-gradient(ellipse farthest-corner at top left, #c41417 0%, #b31315 100%);
+	color:#ffffff;
+	font-size:34px;
+	padding:18px 31px;
+	text-decoration:none;
+  z-index: 6;
+  margin-top: 50px;
+  outline:none;
+  font-family: "Prompt", sans-serif;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 1s linear 1s, opacity 300ms;
+}
+
+.button1:hover{
+  box-shadow:  0px 10px 10px rgba(17, 17, 17, 0.4);
+  transform: scale(1.03) ;
+  transition: all 0.25s ease 0s;
+  opacity: 1;
+}
+
+
+.header1 {
+  margin-top: 70px;
+  margin-bottom: 40px;
+  z-index: 2;
+  font-family: "Prompt", sans-serif;
+  font-size: 37px;
+  
+}
+
+.header2 {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  z-index: 2;
+  font-family: "Prompt", sans-serif;
+  font-size: 37px;
+}
+
+.header3 {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  z-index: 2;
+  font-family: "Prompt", sans-serif;
+  font-size: 37px;
+}
+
+.chatroom {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  z-index: 2;
+  font-family: "Prompt", sans-serif;
+  font-size: 37px; 
+  text-align: left; 
+  margin-left: 10px;
+}
+
+.chatname {
+  top: 0px;
+  margin-bottom: 30px;
+  z-index: 2;
+  font-family: "Prompt", sans-serif;
+  font-size: 15px; 
+  text-align: left; 
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.createroom {
+	border-radius:10px;
+	border:0px ;
+	display:inline-block;
+  cursor:pointer;
+  background-image: radial-gradient(ellipse farthest-corner at top left, #c41417 0%, #b31315 100%);
+	color:#ffffff;
+	font-size:34px;
+	padding:18px 31px;
+	text-decoration:none;
+  z-index: 6;
+  margin-top: 140px;
+  outline:none;
+  font-family: "Prompt", sans-serif;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 1s linear 1s, opacity 300ms;
+}
+
+.createroom:hover{
+  box-shadow:  0px 10px 10px rgba(17, 17, 17, 0.4);
+  transform: scale(1.03) ;
+  transition: all 0.25s ease 0s;
+  opacity: 1;
+}
+
+.enterroom {
+	border-radius:10px;
+	border:0px ;
+	display:inline-block;
+  cursor:pointer;
+  background-image: radial-gradient(ellipse farthest-corner at top left, #ffffff 0%, #ffffff 100%);
+	color:#726b6b;
+	font-size:34px;
+	padding:18px 31px;
+	text-decoration:none;
+  z-index: 6;
+  margin-top: 20px;
+  outline:none;
+  font-family: "Prompt", sans-serif;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 1s linear 1s, opacity 300ms;
+}
+
+.enterroom:hover{
+  transform: scale(1.05) ;
+  color:#c41417;
+  transition: all 0.25s ease 0s;
+  opacity: 1;
+  outline:none;
+}
+
+.sawasdee {
+  font-family: "Prompt", sans-serif;
+  font-size: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 2px;
+  margin-bottom: 12px;
+
+}
+
+.back {
+	border-radius:10px;
+	border:0px ;
+	display:inline-block;
+  cursor:pointer;
+  background-image: radial-gradient(ellipse farthest-corner at top left, #ffffff 0%, #ffffff 100%);
+	color:#726b6b;
+	font-size:34px;
+	padding:12px 45px;
+	text-decoration:none;
+  z-index: 6;
   margin-top: 40px;
+  outline:none;
+  font-family: "Prompt", sans-serif;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 1s linear 1s, opacity 300ms;
+  margin-right: 10px;
+}
+
+.back:hover{
+  transform: scale(1.03) ;
+  color:#c41417;
+  transition: all 0.25s ease 0s;
+  opacity: 1;
+  outline:none;
+}
+
+.confirm {
+	border-radius:10px;
+	border:0px ;
+	display:inline-block;
+  cursor:pointer;
+  background-image: radial-gradient(ellipse farthest-corner at top left, #c41417 0%, #b31315 100%);
+	color:#ffffff;
+	font-size:34px;
+	padding:12px 45px;
+	text-decoration:none;
+  z-index: 6;
+  margin-top: 40px;
+  outline:none;
+  font-family: "Prompt", sans-serif;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 1s linear 1s, opacity 300ms;
+}
+
+.confirm:hover{
+  box-shadow:  0px 10px 10px rgba(17, 17, 17, 0.4);
+  transform: scale(1.03) ; ;
+  transition: all 0.25s ease 0s;
+  opacity: 1;
 }
